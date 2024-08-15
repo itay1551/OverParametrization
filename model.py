@@ -102,6 +102,8 @@ class MyViT(nn.Module):
 
         self.to_patch_embedding_inverse = nn.Sequential(
             nn.LayerNorm(dim),  # Assuming we have statistics to reverse LayerNorm
+            # nn.Linear(dim, dim * 3),  # Linear layer with transposed weights from the forward pass cifar_patch_8_noise
+            # nn.Linear(dim * 3, patch_dim),  # Linear layer with transposed weights from the forward pass cifar_patch_8_noise
             nn.Linear(dim, patch_dim),  # Linear layer with transposed weights from the forward pass
             # nn.LayerNorm(patch_dim),  # Assuming we have statistics to reverse LayerNorm
             Rearrange('b (h w) (p1 p2 c) -> b c (h p1) (w p2)', p1=patch_height, p2=patch_width, w=image_width // patch_width, h=image_height // patch_height, c=channels),

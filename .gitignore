@@ -15,3 +15,20 @@
 /models
 
 /MNIST_data
+/cifar_patch_4
+/cifar_patch_8
+/bit10
+/cifar
+/cifar_8_noise_no_final_layer_2
+/cifar_8_noise_no_final_layer
+/cifar_8_noise_no_final_layer_3
+/cifar_8_noise_no_final_layer_4
+/CIFAR_data
+/jack
+/MNIST_data
+/noise
+/__pycache__
+/cifar_patch_8_noise
+
+
+
