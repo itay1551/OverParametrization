@@ -1,7 +1,7 @@
 # Over Paramerization project using VIT
 
-**How use the code**
-1. install the envaroment.yaml as conda envaroment
+**How to use the code**
+1. install the environment.yml as conda environment
 2. run vit_cifar.ipynb
 
 ## 1. Fraction of Recovered Examples
